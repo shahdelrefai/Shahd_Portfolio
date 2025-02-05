@@ -10,8 +10,8 @@
 <body>
     <!-- Navbar -->
     <div class="navbar">
-        <div class="container flex">
-            <img src="img/logo.png" alt="Logo" class="logo">
+        <div class="container grid">
+            <img src="assets/logo.png" alt="Logo" class="logo">
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -24,7 +24,7 @@
     </div>
 
     <!-- Showcase -->
-    <header class="showcase">
+    <section class="showcase">
         <div class="container grid">
             <div class="showcase-text">
                 <h1>Software Engineer</h1>
@@ -33,9 +33,65 @@
                 </p>
                 <a href="about.html" class="btn">Read More</a>
             </div>
-            <div class="showcase-animated-card">
-
+            <div class="showcase-picture">
+                <img src="assets/me.jpg">
             </div>
         </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a0b47f" fill-opacity="1" d="M0,96L80,106.7C160,117,320,139,480,128C640,117,800,75,960,74.7C1120,75,1280,117,1360,138.7L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+    </section>
+
+    <!-- Featured Projects -->
+    <div class="featured-projects">
+        <h1>Featured Projects</h2>
+        <ul id="cards">
+            <li class="card" id="card1">
+                <div class="card-body flex">
+                    <div class="card-text flex">
+                        <h1>Chess Game Engine</h2>
+                        <p>Designed front and back ends using design patterns like MVC, factory and memento.</p>
+                    </div>
+                    <div class="card-picture">
+                        <img src="assets/projects/chess.png">
+                    </div>
+                </div>
+            </li>
+            <li class="card" id="card2">
+                <div class="card-body flex">
+                    <div class="card-text flex">
+                        <h1>MNGERO</h2>
+                        <ul>
+                            <li> Built a Company Management web app on MVC architecture for assigning and tracking projects and tasks.</li>
+                            <li> Designed a normalized database that relied on procedures for easy database access.</li>
+                        </ul>
+                    </div>
+                    <div class="card-picture">
+                        <img src="assets/projects/mngero.jpeg">
+                    </div>
+                </div>
+            </li>
+            <li class="card" id="card3">
+                <div class="card-body flex">
+                    <div class="card-text flex">
+                        <h1>Stable Diffusion</h2>
+                       <p>Scaled down Stable Diffusion Model focusing on Gaussian noise and color generation with colors distribution.</p>
+                    </div>
+                    <div class="card-picture">
+                        <img src="assets/projects/stablediff.png">
+                    </div>
+                </div>
+            </li>
+            <li class="card" id="card4">
+                <div class="card-body flex">
+                    <div class="card-text flex">
+                        <h1>Tic Tac Toe Web Game</h2>
+                        <p>Established a TCP socket connection between the backend-C server and frontend.</p>
+                    </div>
+                    <div class="card-picture">
+                        <img src="assets/projects/tictactoe.png">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
